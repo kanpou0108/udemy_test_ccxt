@@ -5,9 +5,11 @@ const ccxt = require ('ccxt');
     const config = require('./config')
     let bitflyer = new ccxt.bitflyer (config)
 
-    console.log (bitflyer.id, await bitflyer.loadMarkets ())
+    // console.log (bitflyer.id, await bitflyer.loadMarkets ())
 
-    // console.log (bitflyer.id,  await bitflyer.fetchTicker ('FX_BTC_JPY'))
+    console.log (bitflyer.id, await bitflyer.fetchTicker ('BTC/JPY'))
+
+    // console.log (bitflyer.id, await bitflyer.fetchTicker ('FX_BTC_JPY'))
 
     // console.log (bitflyer.id, await bitflyer.fetchBalance ())
 
