@@ -3,8 +3,8 @@ const ccxt = require ('ccxt');
 const config = require('./config')
 
 const bitflyer = new ccxt.bitflyer (config)
-const interval = 30000
-const profitPrice = 500
+const interval = 1000
+const profitPrice = 50
 const orderSize = 0.01
 const records = []
 
