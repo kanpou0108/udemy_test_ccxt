@@ -14,11 +14,11 @@ const asyncFunc = () => {
 
 async function main () {
   const json = await asyncFunc()
-  let list = json.result[String(ohlc1day)]
+  const list = json.result[String(ohlc1day)]
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice#Parameters
   // list = list.splice(list.length - 25, list.length)
-  list = list.splice(list.length - targetPeriod)
-  const closePriceList = list.map(entry => entry[4])
+  // list = list.splice(list.length - targetPeriod)
+  const closePriceList = list.slice(list.length - targetPeriod).map(entry => entry[4])
   console.log('output', closePriceList)
 
   // https://github.com/fredrick/gauss#instantiation
