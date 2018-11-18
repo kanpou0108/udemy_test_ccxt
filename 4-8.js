@@ -13,21 +13,21 @@ const ccxt = require ('ccxt');
         "product_code": "FX_BTC_JPY",
         "condition_type": "LIMIT",
         "side": "BUY",
-        "price": 745000,
+        "price": 545000,
         "size": 0.01
       },
       {
         "product_code": "FX_BTC_JPY",
         "condition_type": "LIMIT",
         "side": "SELL",
-        "price": 745500,
+        "price": 545500,
         "size": 0.01
       },
       {
         "product_code": "FX_BTC_JPY",
         "condition_type": "STOP",
         "side": "SELL",
-        "trigger_price": 744500,
+        "trigger_price": 544500,
         "size": 0.01
       }]
     });
